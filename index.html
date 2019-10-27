@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Programming Fundamentals
+	</title>
+	<link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css"</link>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Lesson 7</h1>
+		</header>
+		<div class="jumbotron">
+			<p>The result of the javascript will appear below</p>
+			<hr>
+
+			<script>
+				var myBoolean = "Hello" == "hello";
+				if(myBoolean) {
+					document.write("The if statements have executed <br>");
+				}
+				else{
+					document.write("The else statements have executed <br>")
+				}
+
+				var animals = ["cat", "spider", "platypus", "giraffe", "elephant", "whelk", "parrot", "peacocks", "zebras"];
+
+				document.write(animals[0].length);
+
+				for(i=0; i<animals.length; i=i+2) {
+					document.write("<p>The for loop has executed</p>");
+					document.write("<p>This is the "+i+" run of the loop</p>");
+					document.write("<p>The element in the animals aray is "+animals[i]+"</p>");
+				}
+			</script>
+		</div>
+	</div>
+</body>
+</html>
